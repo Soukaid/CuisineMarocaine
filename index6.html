@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moroccan Cuisine</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Lien CDN pour FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Decouvrir-nos-recettes.css">
+</head>
+<body>
+</head>
+<body>
+  <div class="header">
+    <div class="barre-navigation">
+      <ul class="links">
+        <li><a href="#">Acceuil</a></li>
+        <li><a href="#">Recettes</a>
+            <ul class="dropdown">
+                <li><a href="#">Plats traditionnelles</a></li>
+                <li><a href="#">Plats Ramadan</a></li>
+                <li><a href="#">Recettes phares</a></li>
+              </ul>
+        </li>
+        <li><a href="#">Traditions</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="logo-container">
+        <a href="#"><img src="moroccan cuisine.png" alt="" width="110px"></a>
+      </div>
+      <div class="buttons">
+        <a href="#" class="action-button pro">s'inscrire</a>
+        <a href="#" class="action-button">se connecter</a>
+      </div>
+      <!-- Bouton burger transformé en label associé au checkbox -->
+      <label for="toggle-menu" class="burger-menu-button">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </div>
+    <!-- Input caché pour basculer l'affichage du menu -->
+    <input type="checkbox" id="toggle-menu" style="display: none;">
+    <div class="burger-menu">
+      <ul class="links">
+        <li><a href="#">Acceuil</a></li>
+        <li><a href="#">Recettes</a>
+            <ul class="dropdown">
+                <li><a href="#">Entrées</a></li>
+                <li><a href="#">Plats</a></li>
+                <li><a href="#">dessert</a></li>
+              </ul>
+        </li>
+        <li><a href="#">Traditions</a></li>
+        <li><a href="#">Contact</a></li>
+        <div class="divider"></div>
+        <div class="buttons-burger-menu">
+          <a href="#" class="action-button pro">s'inscrire</a>
+          <a href="#" class="action-button">se connecter</a>
+        </div>
+      </ul>
+    </div>
+</div>
+    <section id="recipe" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-title">Couscous Traditionnel Marocain</h2>
+            <div class="row">
+                <!-- Image -->
+                <div class="col-md-6 position-relative">
+                    <div class="recipe-img-container">
+                        <img src="couscous.jpeg" alt="Couscous marocain" class="recipe-img">
+                        <div class="overlay-text">
+                            <h3>Plongez dans la tradition</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Détails de la recette -->
+                <div class="col-md-6">
+                    <div class="recipe-details">
+                        <h3 class="section-title">Ingrédients</h3>
+                        <ul class="ingredients-list">
+                            <li>500g de couscous</li>
+                            <li>1 poulet entier découpé</li>
+                            <li>2 courgettes</li>
+                            <li>2 carottes</li>
+                            <li>1 oignon</li>
+                            <li>100g de pois chiches</li>
+                            <li>Épices (curcuma, cumin, cannelle)</li>
+                            <li>Huile d'olive, sel et poivre</li>
+                        </ul>
+                        <h3 class="section-title">Préparation</h3>
+                        <ol class="preparation-steps">
+                            <li>Faire cuire le poulet avec les épices et l'oignon dans une grande casserole.</li>
+                            <li>Ajouter les légumes et laisser mijoter jusqu'à tendreté.</li>
+                            <li>Cuire le couscous à la vapeur.</li>
+                            <li>Servir chaud avec les légumes et le poulet.</li>
+                        </ol>
+                        <h3 class="section-title">Astuces & Conseils</h3>
+                        <p>Ajoutez des raisins secs et des amandes pour une touche sucrée-salée.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        #recipe {
+            background-color: #f5f5f5;
+            padding: 60px 0;
+        }
+
+        .text-title {
+            font-family: 'Roboto Slab', serif;
+            font-size: 3.2rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .recipe-img-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            max-width: 100%;
+            height: 350px;
+        }
+
+        .recipe-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .recipe-img:hover {
+            transform: scale(1.1);
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            font-family: 'Roboto Slab', serif;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+            font-weight: bold;
+            animation: slideIn 1s ease-out;
+        }
+
+        .recipe-details {
+            padding-left: 30px;
+            line-height: 1.8;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .section-title {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2rem;
+            color: #e67e22;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .ingredients-list, .preparation-steps {
+            font-family: 'Lora', serif;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #34495e;
+            margin-bottom: 20px;
+        }
+
+        .preparation-steps li {
+            margin-bottom: 12px;
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        p {
+            font-family: 'Lora', serif;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #34495e;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translate(-50%, -50%) translateY(50px);
+            }
+            to {
+                transform: translate(-50%, -50%) translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .recipe-img-container {
+                height: 250px;
+            }
+
+            .overlay-text {
+                font-size: 1.5rem;
+            }
+        }
+
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+    padding-top: 70px;
+    background: linear-gradient(180deg, #f4f7f6, #e1e9f0); /* Dégradé pour la page */
+    font-family: "Lora", serif; /* Police élégante */
+    color: #333;
+  }
+  
+
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #120d31;
+  font-size: 1rem;
+}
+a:hover {
+  color: rgb(36, 118, 78);
+}
+.header {
+  padding: 0 2rem;
+  background: linear-gradient(135deg, #2c3e50, #63C7B2);
+  backdrop-filter: blur(15px); 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+body {
+    background-color: #f4f7f6;  /* Teinte douce pour le fond de la page */
+    color: #333;  /* Texte plus sombre pour un meilleur contraste */
+  }
+.barre-navigation {
+  width: 100%;
+  max-width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.barre-navigation .links {
+  display: flex;
+  gap: 2rem;
+  padding-top: 15px;
+}
+.barre-navigation .links li {
+  position: relative;
+  list-style: none;
+}
+.barre-navigation .links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: transform 0.3s, color 0.3s;
+
+}
+.barre-navigation .links a:hover {
+    transform: translateY(-3px); /* Légère élévation au survol */
+    color: #f1c40f; /* Changement de couleur */
+}
+.barre-navigation .links li:hover .dropdown {
+  display: block;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(135deg, rgba(113, 110, 110, 0.9), rgba(36, 118, 78, 0.9));
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  min-width: 160px;
+  padding: 0.5rem 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.dropdown li {
+  padding: 0.8rem 1.2rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.dropdown li:last-child {
+  border-bottom: none;
+}
+.dropdown li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
+}
+.dropdown a {
+  color: #fff;
+  display: block;
+}
+.logo-container {
+    padding-bottom: 10px;
+}
+.logo-container a:hover img {
+    transform: scale(1.1); /* Agrandissement du logo au survol */
+    transition: transform 0.3s ease;
+  }
+/* On remplace le div par un label pour le checkbox */
+.burger-menu-button {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.burger-menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  padding: 1rem 0;
+}
+#toggle-menu:checked + .burger-menu {
+  display: block;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-right: 30px;
+}
+.action-button {
+  background-color: #63C7B2;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.action-button:hover {
+    background-color: #f1c40f;
+  transform: scale(1.1);
+  color: #fff;
+  border: 1px solid #fff;
+}
+.pro {
+  background-color: transparent;
+  color: #120d31;
+  border: 1px solid #120d31;
+}
+.pro:hover {
+  background-color: #fff;
+  color: #120d31;
+}
+/* Menu burger caché par défaut */
+.burger-menu {
+  display: none;
+  height: 310px;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.burger-menu-button {
+    color: #120d31;
+}
+#toggle-menu:checked ~ .burger-menu {
+    display: block;
+  }
+.burger-menu .action-button {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons-burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.burger-menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divider {
+  height: 1px;
+  background-color: #fff;
+  width: 80%;
+  margin: 0.5rem auto 1rem;
+}
+.barre-navigation .links li:focus-within .dropdown,
+.burger-menu .links li:focus-within .dropdown {
+  display: block;
+}
+
+@media (max-width: 990px) {
+  .header {
+    background: none;
+  }
+  .barre-navigation .links,
+  .barre-navigation .action-button {
+    display: none;
+  }
+  .burger-menu-button {
+    display: block;
+  }
+}
+    </style>
+</body>
+</html>
