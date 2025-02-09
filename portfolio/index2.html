@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuisine Marocaine</title>
+
+    <link rel="stylesheet" href="Decouvrir nos recettes.css">
+    
+   
+    </head>
+    <body>
+      <div class="header">
+        <div class="barre-navigation">
+          <ul class="links">
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="#">Recettes</a>
+                <ul class="dropdown">
+                    <li><a href="#">Plats traditionnelles</a></li>
+                    <li><a href="#">Plats Ramadan</a></li>
+                    <li><a href="#">Recettes phares</a></li>
+                  </ul>
+            </li>
+            <li><a href="#">Traditions</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="logo-container">
+            <a href="#"><img src="moroccan cuisine.png" alt="" width="110px"></a>
+          </div>
+          <div class="buttons">
+            <a href="#" class="action-button pro">s'inscrire</a>
+            <a href="#" class="action-button">se connecter</a>
+          </div>
+          <!-- Bouton burger transformé en label associé au checkbox -->
+          <label for="toggle-menu" class="burger-menu-button">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </div>
+        <!-- Input caché pour basculer l'affichage du menu -->
+        <input type="checkbox" id="toggle-menu" style="display: none;">
+        <div class="burger-menu">
+          <ul class="links">
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="#">Recettes</a>
+                <ul class="dropdown">
+                    <li><a href="#">Entrées</a></li>
+                    <li><a href="#">Plats</a></li>
+                    <li><a href="#">dessert</a></li>
+                  </ul>
+            </li>
+            <li><a href="#">Traditions</a></li>
+            <li><a href="#">Contact</a></li>
+            <div class="divider"></div>
+            <div class="buttons-burger-menu">
+              <a href="#" class="action-button pro">s'inscrire</a>
+              <a href="#" class="action-button">se connecter</a>
+            </div>
+          </ul>
+        </div>
+    </div>
+    <section class="categories">
+        <div class="category">
+            <a href="#">
+            <img src="salade aubergine.jpeg" alt="Entrée">
+            <p>Entrée</p>
+            </a>
+        </div>
+        <div class="category">
+            <a href="#">
+            <img src="brochettes.jpg" alt="Plats">
+            <p>Plats</p>
+            </a>
+        </div>
+        <div class="category">
+            <a href="#">
+            <img src="cake.jpg" alt="dessert">
+            <p>Dessert</p>
+            </a>
+        </div>
+        <div class="category">
+            <a href="#">
+            <img src="hrira.jpg" alt="Ramadan">
+            <p>Ramadan</p>
+            </a>
+        </div>
+        <div class="category">
+            <a href="#">
+            <img src="rfissa.jpg" alt="Traditionnelles">
+            <p>traditionnelles</p>
+            </a>
+        </div>
+
+    </section>
+    
+    <!-- Section Recettes -->
+    <section id="recettes" class="recettes-section">
+        <div class="container">
+            <div class="recettes-grid">
+                <div class="card">
+                    <img src="tajine.jpg" class="card-img" alt="Tajine de Poulet">
+                    <div class="card-body">
+                        <h5 class="card-title">Tajine de Poulet</h5>
+                        <p class="card-text">Tajine de Poulet aux Olives et Citrons Confits.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn">Voir la recette</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="couscous.jpeg" class="card-img" alt="Couscous Marocain">
+                    <div class="card-body">
+                        <h5 class="card-title">Couscous Marocain</h5>
+                        <p class="card-text">Couscous Royal aux Sept Légumes.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn">Voir la recette</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="pastilla.jpg" class="card-img" alt="Pastilla">
+                    <div class="card-body">
+                        <h5 class="card-title">Pastilla</h5>
+                        <p class="card-text">Pastilla au Poulet et aux Amandes.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn">Voir la recette</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="rfissa.jpg" class="card-img" alt="rfissa">
+                    <div class="card-body">
+                        <h5 class="card-title">Rfissa</h5>
+                        <p class="card-text">Rfissa Traditionnelle au Poulet et Trid.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn">Voir la recette</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="viande aux prunes.png" class="card-img" alt="viande">
+                    <div class="card-body">
+                        <h5 class="card-title">Viande aux prunes</h5>
+                        <p class="card-text">Tajine d'Agneau aux Pruneaux et Amandes.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn">Voir la recette</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="hrira.jpg" class="card-img" alt="Harira">
+                    <div class="card-body">
+                        <h5 class="card-title">Harira</h5>
+                        <p class="card-text">Harira Marocaine aux Légumineuses.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn">Voir la recette</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

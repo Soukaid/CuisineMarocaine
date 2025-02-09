@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+    padding-top: 70px;
+    background: linear-gradient(180deg, #f4f7f6, #e1e9f0); /* Dégradé pour la page */
+    font-family: "Lora", serif; /* Police élégante */
+    color: #333;
+  }
+  
+
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #120d31;
+  font-size: 1rem;
+}
+a:hover {
+  color: rgb(36, 118, 78);
+}
+.header {
+  padding: 0 2rem;
+  background: linear-gradient(135deg, #2c3e50, #63C7B2);
+  backdrop-filter: blur(15px); 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+body {
+    background-color: #f4f7f6;  /* Teinte douce pour le fond de la page */
+    color: #333;  /* Texte plus sombre pour un meilleur contraste */
+  }
+.barre-navigation {
+  width: 100%;
+  max-width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.barre-navigation .links {
+  display: flex;
+  gap: 2rem;
+  padding-top: 5px;
+}
+.barre-navigation .links li {
+  position: relative;
+  list-style: none;
+}
+.barre-navigation .links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: transform 0.3s, color 0.3s;
+
+}
+.barre-navigation .links a:hover {
+    transform: translateY(-3px); /* Légère élévation au survol */
+    color: #f1c40f; /* Changement de couleur */
+}
+.barre-navigation .links li:hover .dropdown {
+  display: block;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(135deg, rgba(113, 110, 110, 0.9), rgba(36, 118, 78, 0.9));
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  min-width: 160px;
+  padding: 0.5rem 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.dropdown li {
+  padding: 0.8rem 1.2rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.dropdown li:last-child {
+  border-bottom: none;
+}
+.dropdown li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
+}
+.dropdown a {
+  color: #fff;
+  display: block;
+}
+.logo-container {
+    padding-bottom: 10px;
+}
+.logo-container a:hover img {
+    transform: scale(1.1); /* Agrandissement du logo au survol */
+    transition: transform 0.3s ease;
+  }
+/* On remplace le div par un label pour le checkbox */
+.burger-menu-button {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.burger-menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  padding: 1rem 0;
+}
+#toggle-menu:checked + .burger-menu {
+  display: block;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-right: 30px;
+}
+.action-button {
+  background-color: #63C7B2;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.action-button:hover {
+    background-color: #f1c40f;
+  transform: scale(1.1);
+  color: #fff;
+  border: 1px solid #fff;
+}
+.pro {
+  background-color: transparent;
+  color: #120d31;
+  border: 1px solid #120d31;
+}
+.pro:hover {
+  background-color: #fff;
+  color: #120d31;
+}
+/* Menu burger caché par défaut */
+.burger-menu {
+  display: none;
+  height: 310px;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.burger-menu-button {
+    color: #120d31;
+}
+#toggle-menu:checked ~ .burger-menu {
+    display: block;
+  }
+.burger-menu .action-button {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons-burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.burger-menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divider {
+  height: 1px;
+  background-color: #fff;
+  width: 80%;
+  margin: 0.5rem auto 1rem;
+}
+.barre-navigation .links li:focus-within .dropdown,
+.burger-menu .links li:focus-within .dropdown {
+  display: block;
+}
+
+@media (max-width: 990px) {
+  .header {
+    background: none;
+  }
+  .barre-navigation .links,
+  .barre-navigation .action-button {
+    display: none;
+  }
+  .burger-menu-button {
+    display: block;
+  }
+}
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+}
+.category {
+  text-align: center;
+}
+.category img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #000;
+  padding: 5px;
+  background-color: #fff;
+}
+.category img:hover {
+  transform: scale(1.1);
+}
+.category p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+
+.recettes-section {
+  text-align: center;
+  padding: 30px 20px;
+
+}
+.section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+}
+.recettes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.card:hover .card-img {
+  transform: scale(1.1);
+}
+.card-body {
+  padding: 15px;
+  text-align: center;
+  flex-grow: 1;
+}
+.card-title {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #666;
+}
+.card-footer {
+  background-color: #f39c12;
+  padding: 15px;
+  text-align: center;
+}
+.btn {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+.btn:hover {
+  background-color: white;
+  color: #f39c12;
+}

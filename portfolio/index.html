@@ -1,0 +1,198 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Moroccan Cuisine</title> 
+        <!-- Bootstrap CSS --> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- CSS personnalisé --> 
+        <link rel="stylesheet" href="cuisine_marocaine.css"> 
+        <!-- Lien CDN pour FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <div class="barre-navigation">
+              <ul class="links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="index2.html">Recettes</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Entrée</a></li>
+                        <li><a href="#">Plats</a></li>
+                        <li><a href="#">Desserts</a></li>
+                        <li><a href="#recettes">Recettes phares</a></li>
+                    </ul>
+                </li>
+                <li><a href="#video">Traditions</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+              <div class="logo-container">
+                <a href="#"><img src="moroccan cuisine.png" 
+                    alt="" width="130px"></a>
+              </div>
+              <div class="buttons">
+                <a href="inscription.html" class="action-button pro">s'inscrire</a>
+                <a href="se_connecter.html" class="action-button">se connecter</a>
+              </div>
+              <label for="toggle-menu" class="burger-menu-button">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+            </div>
+            <input type="checkbox" id="toggle-menu" style="display: none;">
+            <div class="burger-menu">
+              <ul class="links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="index2.html">Recettes</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Entrée/a></li>
+                        <li><a href="#">Plats</a></li>
+                        <li><a href="#">Desserts</a></li>
+                        <li><a href="#recettes">Recettes phares</a></li>
+                      </ul>
+                </li>
+                <li><a href="#video">Traditions</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div class="divider"></div>
+                <div class="buttons-burger-menu">
+                  <a href="inscription.html" class="action-button pro">s'inscrire</a>
+                  <a href="se_connecter.html" class="action-button">se connecter</a>
+                </div>
+              </ul>
+            </div>
+        </header>
+        <main id="hero">
+            <div class="section-center">
+              <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+              </audio>
+              <h1>Moroccan Cuisine</h1>
+              <p>Explorez les saveurs authentiques et les traditions du Maroc</p>
+              <a href="index2.html">Découvrir nos recettes</a>
+            </div>
+        </main>
+        <section id="recettes" class="py-5 text-center"> 
+            <div class="container"> 
+                <h2 class="text-danger mb-4">Nos Recettes Phare</h2> 
+                <div class="row"> <div class="col-md-4"> 
+                    <div class="card shadow">
+                         <img src="tajine.jpg" class="card-img-top" 
+                         alt="Tajine de Poulet"> 
+                         <div class="card-body"> 
+                            <h5 class="card-title">Tajine de Poulet</h5> 
+                            <p class="card-text">Un mélange exquis de saveurs marocaines</p> 
+                         </div>
+                         <div class="card-footer bg-warning">
+                         <a href="#" class="btn btn-outline-light">Voir la recette</a>
+                         </div>
+                    </div> 
+                </div> 
+                <div class="col-md-4">
+                    <div class="card shadow"> 
+                        <img src="couscous.jpeg" class="card-img-top" alt="Couscous marocain">
+                        <div class="card-body"> 
+                            <h5 class="card-title">Couscous Marocain</h5> 
+                            <p class="card-text">Le plat incontournable.</p> 
+                        </div>
+                        <div class="card-footer bg-warning">
+                            <a href="#" class="btn btn-outline-light">Voir la recette</a>
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="pastilla.jpg" class="card-img-top" alt="Pastilla"> 
+                        <div class="card-body"> 
+                            <h5 class="card-title">Pastilla</h5> 
+                            <p class="card-text">Un mélange unique de sucré et salé.</p> 
+                        </div>
+                        <div class="card-footer bg-warning">
+                            <a href="#" class="btn btn-outline-light">Voir la recette</a>
+                        </div> 
+                    </div>    
+                </div> 
+            </div>  
+        </section> 
+        <section id="video" class="py-5 text-white"> 
+            <div class="container vid d-flex align-items-center justify-content-center"> 
+                <h2 class="mb-4">La Tradition du Couscous du Vendredi</h2>
+                <div class="container-video">
+                    <video class="video" controls>
+                        <source src="videoplayback.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p class="text-justified">Chaque vendredi, plongez dans l'univers chaleureux et 
+                    festif de la préparation du couscous marocain, un plat emblématique de la 
+                    culture du pays. Véritable symbole de convivialité et de partage, le couscous
+                     est préparé avec soin et passion, souvent en famille ou entre amis, créant 
+                     un moment de rassemblement unique. Le mélange subtil des saveurs, des épices
+                      et des légumes frais témoigne de la richesse de la tradition culinaire 
+                      marocaine, où chaque grain de couscous raconte une histoire de générosité 
+                      et de traditions transmises à travers les générations. C'est un moment 
+                      précieux pour savourer ce plat savoureux tout en célébrant les liens 
+                      familiaux et communautaires.</p>
+            </div>
+        </section>
+               
+    
+     <!-- Section Contact --> 
+      <section id="contact" class="py-5"> 
+        <div class="container text-center"> 
+            <h2 class="mb-4 text-warning">Contactez-nous</h2> 
+            <form>
+                 <div class="row">
+                     <div class="col-md-6 mb-3"> 
+                        <input type="text" class="form-control" placeholder="Votre nom">
+                     </div> 
+                     <div class="col-md-6 mb-3">
+                         <input type="email" class="form-control" placeholder="Votre email"> 
+                    </div> 
+                </div> 
+                <textarea class="form-control"  rows="6" cols="130" placeholder="Votre message" ></textarea> 
+                <button class="btn btn-danger btn-lg">Envoyer</button> 
+            </form> 
+        </div> 
+    </section> 
+<!-- Footer -->
+<footer class="text-center py-3 text-white" style="background: rgba(0, 0, 0, 0.9);">
+    <div class="container">
+        <!-- Logo au bord -->
+        <div class="d-flex justify-content-center mb-3">
+            <a href="#" class="d-block">
+                <img src="moroccan cuisine.png" alt="Logo Morocco Kitchen" width="100" height="60">
+            </a>
+        </div>
+
+        <!-- Icônes des réseaux sociaux -->
+        <div class="d-flex justify-content-center mb-3">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon mx-2">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon mx-2">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.pinterest.com" target="_blank" class="social-icon mx-2">
+                <i class="fab fa-pinterest"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="social-icon mx-2">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" class="social-icon mx-2">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="social-icon mx-2">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+
+        <!-- Texte des droits d'auteur -->
+        <p>&copy; 2025 Morocco Kitchen - Tous droits réservés</p>
+    </div>
+</footer>
+
+
+     
+     </body> 
+     </html>
